@@ -1,0 +1,2 @@
+# Scrapper
+Foxhole Scraping Automation
