@@ -13,14 +13,4 @@ class ImageGrabber(multiprocessing.Process):
         self.window_name = window_name
 
     def run(self):
-        self.window_handle = pygetwindow.getWindowsWithTitle(self.window_name)[0]
-        sct = mss()
-        bounding_box = {
-            'top': self.window_handle.top, 
-            'left': self.window_handle.left, 
-            'width': self.window_handle.width, 
-            'height': self.window_handle.height
-        }
-        while True:
-            image = np.array(sct.grab(bounding_box))
-            self.shared_image_list[0] = image
+        pass
